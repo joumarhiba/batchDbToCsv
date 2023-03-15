@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/66269/BD-Paiement/CDPS_A/trunk/lib/dependencies
+END
+ehcache-spring-annotations-1.2.0.jar
+K 25
+svn:wc:ra_dav:version-url
+V 98
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/dependencies/ehcache-spring-annotations-1.2.0.jar
+END
+joda-time.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/dependencies/joda-time.jar
+END
+guava-r09.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/dependencies/guava-r09.jar
+END
+ehcache-2.7.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/dependencies/ehcache-2.7.1.jar
+END

@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/log
+END
+slf4j-log4j12-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/log/slf4j-log4j12-1.6.6.jar
+END
+slf4j-api-1.6.6.jar
+K 25
+svn:wc:ra_dav:version-url
+V 91
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/log/slf4j-api-1.6.6.jar
+END
+log4j-1.2.16.jar
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/log/log4j-1.2.16.jar
+END

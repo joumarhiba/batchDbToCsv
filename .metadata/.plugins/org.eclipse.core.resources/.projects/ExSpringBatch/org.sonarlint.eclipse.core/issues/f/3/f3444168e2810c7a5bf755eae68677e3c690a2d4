@@ -1,0 +1,31 @@
+
+d	java:S106e"9Replace this use of System.out or System.err by a logger.(ı½•öH™RMAJORZ
+CODE_SMELL
+\
+java:S1068C"0Remove this unused "jobExecution" private field.(áé•™HšRMAJORZ
+CODE_SMELL
+b
+java:S1144I"1Remove this unused private "arreterBatch" method.(ÑûÇÊúÿÿÿÿH›RMAJORZ
+CODE_SMELL
+d	java:S106g"9Replace this use of System.out or System.err by a logger.(¢±š§HœRMAJORZ
+CODE_SMELL
+c	java:S106o"9Replace this use of System.out or System.err by a logger.(±ªHRMAJORZ
+CODE_SMELL
+v
+java:S2095j"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ãİ»ÈHRBLOCKERZBUG
+n
+java:S1854_"BRemove this useless assignment to local variable "databaseExists".(¾à·HŸRMAJORZ
+CODE_SMELL
+t
+java:S2095W"HUse try-with-resources or close this "Connection" in a "finally" clause.( éæ¶ıÿÿÿÿH RBLOCKERZBUG
+i	java:S106m"9Replace this use of System.out or System.err by a logger.(±şºøÿÿÿÿH¡RMAJORZ
+CODE_SMELL
+_
+java:S1481["3Remove this unused "databaseExists" local variable.(Ò•Û›H¢RMINORZ
+CODE_SMELL
+\
+java:S2065C"0Remove the "transient" modifier from this field.(áé•™H£RMINORZ
+CODE_SMELL
+a
+java:S2065@"0Remove the "transient" modifier from this field.(€©ˆ»ûÿÿÿÿH¤RMINORZ
+CODE_SMELL

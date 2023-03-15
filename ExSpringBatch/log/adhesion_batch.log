@@ -1,0 +1,791 @@
+2022-09-13 11:40:25,242 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Line 44 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 44 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:417)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3182)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidComplexType(XMLSchemaValidator.java:3145)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3105)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3007)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2150)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:818)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:648)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:235)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	... 2 more
+2022-09-26 15:26:53,307 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Line 60 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 60 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:94)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:538)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:417)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3182)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidComplexType(XMLSchemaValidator.java:3145)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3105)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3007)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2150)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:818)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:648)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:235)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	... 2 more
+2022-09-26 15:30:13,174 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerExistReperStep': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerExistReperStep': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.injectDefaults(CoreNamespacePostProcessor.java:138)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.postProcessBeforeInitialization(CoreNamespacePostProcessor.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	... 12 more
+2022-09-26 15:35:44,592 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerExistReperStep': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerExistReperStep': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.injectDefaults(CoreNamespacePostProcessor.java:138)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.postProcessBeforeInitialization(CoreNamespacePostProcessor.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	... 12 more
+2022-09-26 15:39:57,908 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerExistReperStep': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerExistReperStep': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.injectDefaults(CoreNamespacePostProcessor.java:138)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.postProcessBeforeInitialization(CoreNamespacePostProcessor.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	... 12 more
+2022-09-26 16:19:47,749 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'org.springframework.jdbc.datasource.init.DataSourceInitializer#0': Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.jdbc.datasource.init.DataSourceInitializer#0': Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:607)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:470)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:496)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:490)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:260)
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:450)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:496)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:490)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 13 more
+2022-09-26 16:29:08,942 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'org.springframework.jdbc.datasource.init.DataSourceInitializer#0': Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.jdbc.datasource.init.DataSourceInitializer#0': Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:607)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:470)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:496)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:490)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:260)
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:450)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:496)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:490)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 13 more
+2022-09-26 16:32:35,330 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'org.springframework.jdbc.datasource.init.DataSourceInitializer#0': Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.jdbc.datasource.init.DataSourceInitializer#0': Initialization of bean failed; nested exception is org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:607)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.TypeMismatchException: Failed to convert property value of type 'null' to required type 'boolean' for property 'enabled'; nested exception is java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:470)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:496)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:490)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 12 more
+Caused by: java.lang.IllegalArgumentException: Cannot convert value of type [null] to required type [boolean] for property 'enabled': PropertyEditor [org.springframework.beans.propertyeditors.CustomBooleanEditor] returned inappropriate value of type [null]
+	at org.springframework.beans.TypeConverterDelegate.convertIfNecessary(TypeConverterDelegate.java:260)
+	at org.springframework.beans.BeanWrapperImpl.convertIfNecessary(BeanWrapperImpl.java:450)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:496)
+	at org.springframework.beans.BeanWrapperImpl.convertForProperty(BeanWrapperImpl.java:490)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.convertForProperty(AbstractAutowireCapableBeanFactory.java:1437)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1396)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 13 more
+2022-09-26 16:48:32,132 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: A job instance already exists and is complete for parameters={time=1664210762805}.  If you want to run this job again, change the parameters.
+org.springframework.batch.core.repository.JobInstanceAlreadyCompleteException: A job instance already exists and is complete for parameters={time=1664210762805}.  If you want to run this job again, change the parameters.
+	at org.springframework.batch.core.repository.support.SimpleJobRepository.createJobExecution(SimpleJobRepository.java:126)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.transaction.interceptor.TransactionInterceptor.invoke(TransactionInterceptor.java:110)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.batch.core.repository.support.AbstractJobRepositoryFactoryBean$1.invoke(AbstractJobRepositoryFactoryBean.java:172)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy4.createJobExecution(Unknown Source)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:124)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2022-09-26 17:27:34,258 INFO {} (ValiderExistReperTasklet.java:17): test
+2022-09-26 19:46:12,495 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2022-09-26 19:46:12,511 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 26/09/2022 19:46:12 avec le code retour : 2
+2022-09-26 19:46:12,511 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'personneLineMapper' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Cannot resolve reference to bean 'personneFieldSetMapper' while setting bean property 'fieldSetMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneFieldSetMapper' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'personneLineTokenizer' of bean class [fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper]: Bean property 'personneLineTokenizer' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneLineMapper' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Cannot resolve reference to bean 'personneFieldSetMapper' while setting bean property 'fieldSetMapper'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneFieldSetMapper' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'personneLineTokenizer' of bean class [fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper]: Bean property 'personneLineTokenizer' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:607)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneFieldSetMapper' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'personneLineTokenizer' of bean class [fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper]: Bean property 'personneLineTokenizer' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 13 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'personneLineTokenizer' of bean class [fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper]: Bean property 'personneLineTokenizer' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:58)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 23 more
+2022-09-26 19:50:59,107 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2022-09-26 19:50:59,122 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 26/09/2022 19:50:59 avec le code retour : 2
+2022-09-26 19:50:59,123 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerExistReperStep': Cannot resolve reference to bean 'validerExistReperStepTasklet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerExistReperStepTasklet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repertoireQuarantaine' of bean class [fr.cnamts.ex.batch.tasklet.ValiderExistReperTasklet]: Bean property 'repertoireQuarantaine' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerExistReperStep': Cannot resolve reference to bean 'validerExistReperStepTasklet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerExistReperStepTasklet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repertoireQuarantaine' of bean class [fr.cnamts.ex.batch.tasklet.ValiderExistReperTasklet]: Bean property 'repertoireQuarantaine' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerExistReperStepTasklet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repertoireQuarantaine' of bean class [fr.cnamts.ex.batch.tasklet.ValiderExistReperTasklet]: Bean property 'repertoireQuarantaine' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 13 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'repertoireQuarantaine' of bean class [fr.cnamts.ex.batch.tasklet.ValiderExistReperTasklet]: Bean property 'repertoireQuarantaine' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:58)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 23 more
+2022-09-26 19:52:35,792 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2022-09-26 19:52:35,808 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 26/09/2022 19:52:35 avec le code retour : 2
+2022-09-26 19:52:35,808 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'importPersonneStep': Cannot resolve reference to bean 'skipPolicy' while setting bean property 'skipPolicy'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'skipPolicy' is defined
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'importPersonneStep': Cannot resolve reference to bean 'skipPolicy' while setting bean property 'skipPolicy'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'skipPolicy' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'skipPolicy' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 13 more
+2022-09-26 19:53:14,274 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2022-09-26 19:53:14,288 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 26/09/2022 19:53:14 avec le code retour : 2
+2022-09-26 19:53:14,289 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'importPersonneStep': Cannot create inner bean '(inner bean)' of type [org.springframework.batch.core.listener.StepListenerFactoryBean] while setting bean property 'listeners' with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7': Cannot resolve reference to bean 'personneStepListener' while setting bean property 'delegate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'personneStepListener' is defined
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'importPersonneStep': Cannot create inner bean '(inner bean)' of type [org.springframework.batch.core.listener.StepListenerFactoryBean] while setting bean property 'listeners' with key [2]; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7': Cannot resolve reference to bean 'personneStepListener' while setting bean property 'delegate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'personneStepListener' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:282)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:126)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:353)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name '(inner bean)#7': Cannot resolve reference to bean 'personneStepListener' while setting bean property 'delegate'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'personneStepListener' is defined
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveInnerBean(BeanDefinitionValueResolver.java:271)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:126)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveManagedList(BeanDefinitionValueResolver.java:353)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:154)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	... 2 more
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'personneStepListener' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 21 more
+2022-09-26 19:54:20,951 INFO {} (ValiderExistReperTasklet.java:35): test
+2022-09-26 19:54:20,969 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+java.lang.NullPointerException
+	at fr.cnamts.ex.batch.tasklet.ValiderExistReperTasklet.execute(ValiderExistReperTasklet.java:46)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:253)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+2022-09-26 20:03:28,992 INFO {} (GlobalSettings.java:113): Trying to find Dozer configuration file: dozer.properties
+2022-09-26 20:03:29,053 WARN {} (GlobalSettings.java:118): Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2022-09-26 20:03:29,059 INFO {} (DozerInitializer.java:70): Initializing Dozer. Version: 5.4.0, Thread Name: Main Thread
+2022-09-26 20:03:29,738 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2022-09-26 20:03:29,738 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2022-09-26 20:03:29,742 INFO {} (DozerBeanMapper.java:175): Initializing a new instance of dozer bean mapper.
+2022-09-26 20:03:30,032 INFO {} (ValiderExistReperTasklet.java:35): test
+2022-09-26 20:03:30,092 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.personneItemWriter' defined in class path resource [fr/cnamts/ex/job/writer.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'personneDS' of bean class [fr.cnamts.ex.batch.item.writer.ImportPersonneWriter]: Bean property 'personneDS' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:333)
+	at org.springframework.batch.core.scope.StepScope.get(StepScope.java:158)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:329)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:33)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:184)
+	at $Proxy6.open(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.open(CompositeItemStream.java:96)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.open(TaskletStep.java:307)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:192)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:302)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:49)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:193)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'personneDS' of bean class [fr.cnamts.ex.batch.item.writer.ImportPersonneWriter]: Bean property 'personneDS' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:58)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 25 more
+2022-09-26 20:03:30,095 ERROR {} (AbstractStep.java:267): Exception while closing step execution resources
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.personneItemWriter' defined in class path resource [fr/cnamts/ex/job/writer.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'personneDS' of bean class [fr.cnamts.ex.batch.item.writer.ImportPersonneWriter]: Bean property 'personneDS' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:333)
+	at org.springframework.batch.core.scope.StepScope.get(StepScope.java:158)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:329)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:33)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:184)
+	at $Proxy6.close(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.close(CompositeItemStream.java:85)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.close(TaskletStep.java:302)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:264)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:302)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:49)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:193)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'personneDS' of bean class [fr.cnamts.ex.batch.item.writer.ImportPersonneWriter]: Bean property 'personneDS' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:907)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:58)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1133)
+	... 25 more
+2022-09-26 20:04:34,957 INFO {} (GlobalSettings.java:113): Trying to find Dozer configuration file: dozer.properties
+2022-09-26 20:04:34,973 WARN {} (GlobalSettings.java:118): Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2022-09-26 20:04:34,976 INFO {} (DozerInitializer.java:70): Initializing Dozer. Version: 5.4.0, Thread Name: Main Thread
+2022-09-26 20:04:35,124 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2022-09-26 20:04:35,125 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2022-09-26 20:04:35,128 INFO {} (DozerBeanMapper.java:175): Initializing a new instance of dozer bean mapper.
+2022-09-26 20:04:35,389 INFO {} (ValiderExistReperTasklet.java:35): test
+2022-09-26 20:04:35,454 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 2 in resource=[URL [file:./resources/ex/entree/tpSpringBatch.csv]], input=[nom1;prenom1;1]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.read(Unknown Source)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:92)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:155)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:114)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:287)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:302)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:49)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:193)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: java.lang.IllegalArgumentException: Cannot access column [NOM] from [nom, prenom, age]
+	at org.springframework.batch.item.file.transform.DefaultFieldSet.indexOf(DefaultFieldSet.java:689)
+	at org.springframework.batch.item.file.transform.DefaultFieldSet.readString(DefaultFieldSet.java:169)
+	at fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper.mapFieldSet(PersonneFieldSetMapper.java:54)
+	at fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper.mapFieldSet(PersonneFieldSetMapper.java:1)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 43 more
+2022-09-26 20:05:45,367 INFO {} (GlobalSettings.java:113): Trying to find Dozer configuration file: dozer.properties
+2022-09-26 20:05:45,382 WARN {} (GlobalSettings.java:118): Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2022-09-26 20:05:45,385 INFO {} (DozerInitializer.java:70): Initializing Dozer. Version: 5.4.0, Thread Name: Main Thread
+2022-09-26 20:05:45,534 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2022-09-26 20:05:45,535 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2022-09-26 20:05:45,538 INFO {} (DozerBeanMapper.java:175): Initializing a new instance of dozer bean mapper.
+2022-09-26 20:05:45,800 INFO {} (ValiderExistReperTasklet.java:35): test
+2022-09-26 20:05:45,868 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 2 in resource=[URL [file:./resources/ex/entree/tpSpringBatch.csv]], input=[nom1;prenom1;1]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.read(Unknown Source)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:92)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:155)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:114)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:287)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:302)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:135)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:49)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:193)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: java.lang.IllegalArgumentException: Cannot access column [NOM] from [nom, prenom, age]
+	at org.springframework.batch.item.file.transform.DefaultFieldSet.indexOf(DefaultFieldSet.java:689)
+	at org.springframework.batch.item.file.transform.DefaultFieldSet.readString(DefaultFieldSet.java:169)
+	at fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper.mapFieldSet(PersonneFieldSetMapper.java:54)
+	at fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper.mapFieldSet(PersonneFieldSetMapper.java:1)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 43 more
+2022-09-26 20:07:28,520 INFO {} (GlobalSettings.java:113): Trying to find Dozer configuration file: dozer.properties
+2022-09-26 20:07:28,536 WARN {} (GlobalSettings.java:118): Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2022-09-26 20:07:28,539 INFO {} (DozerInitializer.java:70): Initializing Dozer. Version: 5.4.0, Thread Name: Main Thread
+2022-09-26 20:07:28,687 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2022-09-26 20:07:28,687 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2022-09-26 20:07:28,690 INFO {} (DozerBeanMapper.java:175): Initializing a new instance of dozer bean mapper.
+2022-09-26 20:07:28,950 INFO {} (ValiderExistReperTasklet.java:35): test
+2022-09-26 20:07:29,012 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom1, prenom=prenom1, age=1]
+2022-09-26 20:07:29,013 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom2, prenom=prenom2, age=2]
+2022-09-26 20:07:29,014 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom3, prenom=prenom3, age=3]
+2022-09-26 20:07:29,014 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom4, prenom=prenom4, age=4]
+2022-09-26 20:07:29,015 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom5, prenom=prenom5, age=5]
+2022-09-26 20:07:29,015 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom6, prenom=prenom6, age=6]
+2022-09-27 10:03:31,637 INFO {} (GlobalSettings.java:113): Trying to find Dozer configuration file: dozer.properties
+2022-09-27 10:03:31,677 WARN {} (GlobalSettings.java:118): Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2022-09-27 10:03:31,680 INFO {} (DozerInitializer.java:70): Initializing Dozer. Version: 5.4.0, Thread Name: Main Thread
+2022-09-27 10:03:31,965 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2022-09-27 10:03:31,966 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2022-09-27 10:03:31,969 INFO {} (DozerBeanMapper.java:175): Initializing a new instance of dozer bean mapper.
+2022-09-27 10:03:31,997 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2022-09-27 10:03:31,999 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 27/09/2022 10:03:31 avec le code retour : 2
+2022-09-27 10:03:31,999 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'verifierParametreJob': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'verifierParametreJob': Initialization of bean failed; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:933)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:84)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:142)
+Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No bean named 'transactionManager' is defined
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.getBeanDefinition(DefaultListableBeanFactory.java:549)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getMergedLocalBeanDefinition(AbstractBeanFactory.java:1096)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:278)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1117)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.injectDefaults(CoreNamespacePostProcessor.java:138)
+	at org.springframework.batch.core.configuration.xml.CoreNamespacePostProcessor.postProcessBeforeInitialization(CoreNamespacePostProcessor.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1479)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	... 12 more
+2022-09-27 10:04:21,102 INFO {} (GlobalSettings.java:113): Trying to find Dozer configuration file: dozer.properties
+2022-09-27 10:04:21,117 WARN {} (GlobalSettings.java:118): Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2022-09-27 10:04:21,120 INFO {} (DozerInitializer.java:70): Initializing Dozer. Version: 5.4.0, Thread Name: Main Thread
+2022-09-27 10:04:21,271 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2022-09-27 10:04:21,271 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2022-09-27 10:04:21,274 INFO {} (DozerBeanMapper.java:175): Initializing a new instance of dozer bean mapper.
+2022-09-27 10:04:21,544 INFO {} (ValiderExistReperTasklet.java:35): test
+2022-09-27 10:04:21,689 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom1, prenom=prenom1, age=1]
+2022-09-27 10:04:21,691 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom2, prenom=prenom2, age=2]
+2022-09-27 10:04:21,692 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom3, prenom=prenom3, age=3]
+2022-09-27 10:04:21,693 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom4, prenom=prenom4, age=4]
+2022-09-27 10:04:21,693 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom5, prenom=prenom5, age=5]
+2022-09-27 10:04:21,694 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom6, prenom=prenom6, age=6]
+2022-09-27 10:05:41,593 INFO {} (GlobalSettings.java:113): Trying to find Dozer configuration file: dozer.properties
+2022-09-27 10:05:41,612 WARN {} (GlobalSettings.java:118): Dozer configuration file not found: dozer.properties.  Using defaults for all Dozer global properties.
+2022-09-27 10:05:41,615 INFO {} (DozerInitializer.java:70): Initializing Dozer. Version: 5.4.0, Thread Name: Main Thread
+2022-09-27 10:05:41,768 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerStatisticsController] auto registered with the Platform MBean Server
+2022-09-27 10:05:41,769 INFO {} (JMXPlatformImpl.java:66): Dozer JMX MBean [org.dozer.jmx:type=DozerAdminController] auto registered with the Platform MBean Server
+2022-09-27 10:05:41,772 INFO {} (DozerBeanMapper.java:175): Initializing a new instance of dozer bean mapper.
+2022-09-27 10:05:42,059 INFO {} (ValiderExistReperTasklet.java:35): test
+2022-09-27 10:05:42,135 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom1, prenom=prenom1, age=1]
+2022-09-27 10:05:42,136 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom2, prenom=prenom2, age=2]
+2022-09-27 10:05:42,137 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom3, prenom=prenom3, age=3]
+2022-09-27 10:05:42,138 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom4, prenom=prenom4, age=4]
+2022-09-27 10:05:42,139 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom5, prenom=prenom5, age=5]
+2022-09-27 10:05:42,139 INFO {} (PersonneDSImpl.java:18): PersonneBO [nom=nom6, prenom=prenom6, age=6]

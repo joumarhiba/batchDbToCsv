@@ -1,0 +1,32 @@
+package fr.cnamts.ex.batch.item.processor;
+
+import java.util.Date;
+
+import org.dozer.DozerBeanMapper;
+import org.springframework.batch.item.ItemProcessor;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import fr.cnamts.ex.batch.bo.Employee;
+import fr.cnamts.ex.batch.bo.EmployeeDto;
+
+public class ImportEmployeeProcessor implements ItemProcessor<Employee, EmployeeDto> {
+
+	@Autowired
+	private DozerBeanMapper dozerBeanMapper;
+	
+	@Override
+	public EmployeeDto process(Employee employee) throws Exception {
+			
+	EmployeeDto employeeDto = dozerBeanMapper.map(employee,EmployeeDto.class);
+		
+		
+		if(employeeDto.getCreatedAt() == null ) {
+			employeeDto.setCreatedAt(new Date());
+		}
+	
+// TODO: format cretedAt........................
+
+		return employeeDto;
+	}
+
+}

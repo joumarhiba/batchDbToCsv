@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:batch="http://www.springframework.org/schema/batch"
+ xmlns:jdbc="http://www.springframework.org/schema/jdbc" xmlns:oxm="http://www.springframework.org/schema/oxm"
+ xmlns:util="http://www.springframework.org/schema/util"
+ xsi:schemaLocation="http://www.springframework.org/schema/jdbc
+         http://www.springframework.org/schema/jdbc/spring-jdbc-3.2.xsd
+      http://www.springframework.org/schema/beans 
+      http://www.springframework.org/schema/beans/spring-beans-3.2.xsd
+      http://www.springframework.org/schema/util 
+      http://www.springframework.org/schema/util/spring-util-3.2.xsd
+      http://www.springframework.org/schema/batch 
+      http://www.springframework.org/schema/batch/spring-batch-2.2.xsd
+            http://www.springframework.org/schema/oxm 
+            http://www.springframework.org/schema/oxm/spring-oxm-3.2.xsd">
+            
+            
+            
+            
+            
+    <bean id="employeeJdbcReader" class ="fr.cnamts.ex.batch.item.reader.ExportEmployeeReader" scope="step">
+	<property name="readerJdbc" ref="readerJdbcEmployee"></property>
+ </bean>   
+ 
+ 
+ <bean id="readerJdbcPersonne"
+  class="org.springframework.batch.item.database.JdbcCursorItemReader"
+  scope="step">
+  <property name="dataSource" ref="dataSource" />
+  <property name="sql"
+   value="SELECT TODO" 
+  />
+  <property name="rowMapper" ref="TODO" />
+ </bean>
+            
+            
+            
+            
+            
+            
+            
+            
+            
+            
+<bean id="personneItemReader"
+        class="fr.cnamts.ex.batch.item.reader.ImportPersonneReader"
+        scope="step">
+        <property name="linesToSkip" value="1" />
+<!--        <property name="skippedLinesCallback" ref="headerPersonneSetMapper"/>-->
+        <property name="resource" value="file:${repertoire.entree}/#{jobExecutionContext['NOM_FICHIER_ENTREE']}" />
+        <property name="lineMapper" ref="personneLineMapper" />
+    </bean>
+    
+    <bean id="headerPersonneSetMapper"
+        class="fr.cnamts.ex.batch.mapping.HeaderPersonneSetMapper">
+<!--        <property name="fileName" value="${importBCT.adhesions.chemin}" />-->
+    </bean>
+
+    <bean id="personneLineMapper"
+        class="org.springframework.batch.item.file.mapping.DefaultLineMapper">
+        <property name="lineTokenizer" ref="personneLineTokenizer" />
+        <property name="fieldSetMapper" ref="personneFieldSetMapper" />
+    </bean>
+ <bean id="personneLineTokenizer"
+                class="fr.cnamts.ex.batch.item.tokenizer.PersonneLineTokenizer">
+                <property name="delimiter" value=";" />
+                <property name="names"
+                    value="NOM,PRENOM,AGE" />
+        </bean>
+
+    <bean id="personneFieldSetMapper"
+        class="fr.cnamts.ex.batch.mapping.PersonneFieldSetMapper">
+    </bean>
+ 
+ 
+<!--  2eme partie 
+
+
+ -->
+</beans>            

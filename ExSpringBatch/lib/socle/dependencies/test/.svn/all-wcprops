@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/test
+END
+hamcrest-all-1.1.jar
+K 25
+svn:wc:ra_dav:version-url
+V 93
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/test/hamcrest-all-1.1.jar
+END
+junit-4.10.jar
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/test/junit-4.10.jar
+END
+junit-report.jar
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/test/junit-report.jar
+END
+mockito-all-1.9.5.jar
+K 25
+svn:wc:ra_dav:version-url
+V 94
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/socle/dependencies/test/mockito-all-1.9.5.jar
+END

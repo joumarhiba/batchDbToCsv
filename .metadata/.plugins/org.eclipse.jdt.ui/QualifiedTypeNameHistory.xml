@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="javax.swing.tree.RowMapper"/>
+<fullyQualifiedTypeName name="org.springframework.batch.item.ItemProcessor"/>
+<fullyQualifiedTypeName name="org.dozer.DozerBeanMapper"/>
+<fullyQualifiedTypeName name="java.util.Date"/>
+<fullyQualifiedTypeName name="org.springframework.batch.item.ItemWriter"/>
+<fullyQualifiedTypeName name="org.springframework.jdbc.core.namedparam.MapSqlParameterSource"/>
+<fullyQualifiedTypeName name="fr.cnamts.ex.batch.bo.Employee"/>
+<fullyQualifiedTypeName name="fr.cnamts.ex.batch.item.writer.ImportEmployeeWriter"/>
+<fullyQualifiedTypeName name="fr.cnamts.ex.batch.bo.EmployeeDto"/>
+<fullyQualifiedTypeName name="java.text.SimpleDateFormat"/>
+<fullyQualifiedTypeName name="fr.cnamts.ex.batch.item.processor.ImportEmployeeProcessor"/>
+<fullyQualifiedTypeName name="org.springframework.batch.core.step.tasklet.Tasklet"/>
+<fullyQualifiedTypeName name="org.springframework.batch.repeat.RepeatStatus"/>
+<fullyQualifiedTypeName name="java.io.File"/>
+<fullyQualifiedTypeName name="fr.cnamts.ex.batch.tasklet.validerExistFileTasklet"/>
+<fullyQualifiedTypeName name="org.springframework.batch.core.StepExecution"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.springframework.batch.core.StepExecutionListener"/>
+<fullyQualifiedTypeName name="org.springframework.batch.core.ExitStatus"/>
+<fullyQualifiedTypeName name="java.time.LocalDate"/>
+<fullyQualifiedTypeName name="java.time.format.DateTimeFormatter"/>
+<fullyQualifiedTypeName name="java.lang.String"/>
+</qualifiedTypeNameHistroy>

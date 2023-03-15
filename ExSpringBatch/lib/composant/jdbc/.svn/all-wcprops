@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/composant/jdbc
+END
+ojdbc14.jar
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/composant/jdbc/ojdbc14.jar
+END
+tomcat-jdbc-7.0.54.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/composant/jdbc/tomcat-jdbc-7.0.54.jar
+END
+tomcat-juli-7.0.54.jar
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/62620/BD-Paiement/CDPS_A/trunk/lib/composant/jdbc/tomcat-juli-7.0.54.jar
+END

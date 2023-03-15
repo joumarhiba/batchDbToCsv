@@ -1,0 +1,9 @@
+
+g	java:S125"<This block of commented-out lines of code should be removed.(±Â¶˜HßRMAJORZ
+CODE_SMELL
+V
+java:S1068"*Remove this unused "LOGGER" private field.(Ü•ÍÏHàRMAJORZ
+CODE_SMELL
+
+java:S1488"bImmediately return this expression instead of assigning it to the temporary variable "personneBO".(†ıÜïHáRMINORZ
+CODE_SMELL

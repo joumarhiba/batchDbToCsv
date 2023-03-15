@@ -1,0 +1,1550 @@
+2016-02-10 08:41:09,112 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-10 08:41:09,116 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 10/02/2016 08:41:09 avec le code retour : 2
+2016-02-10 08:41:09,117 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Configuration problem: You cannot use spring-batch-2.0.xsd with Spring Batch 2.1.  Please upgrade your schema declarations (or use the spring-batch.xsd alias if you are feeling lucky).
+Offending resource: class path resource [fr/cnamts/ex/job/job.xml]
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: You cannot use spring-batch-2.0.xsd with Spring Batch 2.1.  Please upgrade your schema declarations (or use the spring-batch.xsd alias if you are feeling lucky).
+Offending resource: class path resource [fr/cnamts/ex/job/job.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:72)
+	at org.springframework.batch.core.configuration.xml.JobParser.doParse(JobParser.java:71)
+	at org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.parseInternal(AbstractSingleBeanDefinitionParser.java:85)
+	at org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.parse(AbstractBeanDefinitionParser.java:59)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1335)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1325)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:135)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:93)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:143)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:178)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:149)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:212)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:126)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:92)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:467)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:397)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-10 08:47:18,898 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-10 08:47:18,904 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 10/02/2016 08:47:18 avec le code retour : 2
+2016-02-10 08:47:18,905 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [filesLocation.properties] cannot be opened because it does not exist
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [filesLocation.properties] cannot be opened because it does not exist
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:669)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: java.io.FileNotFoundException: class path resource [filesLocation.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:157)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:181)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:161)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:137)
+	... 7 more
+2016-02-10 08:47:40,693 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-10 08:47:40,697 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 10/02/2016 08:47:40 avec le code retour : 2
+2016-02-10 08:47:40,697 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [filesLocation.properties] cannot be opened because it does not exist
+org.springframework.beans.factory.BeanInitializationException: Could not load properties; nested exception is java.io.FileNotFoundException: class path resource [filesLocation.properties] cannot be opened because it does not exist
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:694)
+	at org.springframework.context.support.AbstractApplicationContext.invokeBeanFactoryPostProcessors(AbstractApplicationContext.java:669)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:461)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: java.io.FileNotFoundException: class path resource [filesLocation.properties] cannot be opened because it does not exist
+	at org.springframework.core.io.ClassPathResource.getInputStream(ClassPathResource.java:157)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.loadProperties(PropertiesLoaderSupport.java:181)
+	at org.springframework.core.io.support.PropertiesLoaderSupport.mergeProperties(PropertiesLoaderSupport.java:161)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.postProcessBeanFactory(PropertySourcesPlaceholderConfigurer.java:137)
+	... 7 more
+2016-02-10 09:20:37,484 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+java.lang.StringIndexOutOfBoundsException: String index out of range: -1
+	at java.lang.String.substring(String.java:1932)
+	at java.lang.String.substring(String.java:1905)
+	at fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet.execute(ValiderFileEntreeTakslet.java:22)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:253)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-10 10:44:24,582 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-10 10:44:24,587 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 10/02/2016 10:44:24 avec le code retour : 2
+2016-02-10 10:44:24,588 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Configuration problem: The element [gestionErrorStep] is unreachable
+Offending resource: class path resource [fr/cnamts/ex/job/job.xml]
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: The element [gestionErrorStep] is unreachable
+Offending resource: class path resource [fr/cnamts/ex/job/job.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:72)
+	at org.springframework.batch.core.configuration.xml.AbstractFlowParser.doParse(AbstractFlowParser.java:167)
+	at org.springframework.batch.core.configuration.xml.InlineFlowParser.doParse(InlineFlowParser.java:54)
+	at org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.parseInternal(AbstractSingleBeanDefinitionParser.java:85)
+	at org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.parse(AbstractBeanDefinitionParser.java:59)
+	at org.springframework.batch.core.configuration.xml.JobParser.doParse(JobParser.java:121)
+	at org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.parseInternal(AbstractSingleBeanDefinitionParser.java:85)
+	at org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.parse(AbstractBeanDefinitionParser.java:59)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1435)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1425)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-10 10:44:32,789 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-10 10:44:32,793 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 10/02/2016 10:44:32 avec le code retour : 2
+2016-02-10 10:44:32,793 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Configuration problem: The element [gestionErrorStep] is unreachable
+Offending resource: class path resource [fr/cnamts/ex/job/job.xml]
+org.springframework.beans.factory.parsing.BeanDefinitionParsingException: Configuration problem: The element [gestionErrorStep] is unreachable
+Offending resource: class path resource [fr/cnamts/ex/job/job.xml]
+	at org.springframework.beans.factory.parsing.FailFastProblemReporter.error(FailFastProblemReporter.java:68)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:85)
+	at org.springframework.beans.factory.parsing.ReaderContext.error(ReaderContext.java:72)
+	at org.springframework.batch.core.configuration.xml.AbstractFlowParser.doParse(AbstractFlowParser.java:167)
+	at org.springframework.batch.core.configuration.xml.InlineFlowParser.doParse(InlineFlowParser.java:54)
+	at org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.parseInternal(AbstractSingleBeanDefinitionParser.java:85)
+	at org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.parse(AbstractBeanDefinitionParser.java:59)
+	at org.springframework.batch.core.configuration.xml.JobParser.doParse(JobParser.java:121)
+	at org.springframework.beans.factory.xml.AbstractSingleBeanDefinitionParser.parseInternal(AbstractSingleBeanDefinitionParser.java:85)
+	at org.springframework.beans.factory.xml.AbstractBeanDefinitionParser.parse(AbstractBeanDefinitionParser.java:59)
+	at org.springframework.beans.factory.xml.NamespaceHandlerSupport.parse(NamespaceHandlerSupport.java:73)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1435)
+	at org.springframework.beans.factory.xml.BeanDefinitionParserDelegate.parseCustomElement(BeanDefinitionParserDelegate.java:1425)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.parseBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:184)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.doRegisterBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:140)
+	at org.springframework.beans.factory.xml.DefaultBeanDefinitionDocumentReader.registerBeanDefinitions(DefaultBeanDefinitionDocumentReader.java:111)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.registerBeanDefinitions(XmlBeanDefinitionReader.java:493)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:390)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-10 10:46:09,474 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-10 10:46:09,479 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 10/02/2016 10:46:09 avec le code retour : 2
+2016-02-10 10:46:09,479 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'gestionErrorStep': Cannot resolve reference to bean 'gestionErrorTasklet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gestionErrorTasklet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repEntree' of bean class [fr.cnamts.ex.tasklet.GestionErrorTasklet]: Bean property 'repEntree' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gestionErrorStep': Cannot resolve reference to bean 'gestionErrorTasklet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gestionErrorTasklet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repEntree' of bean class [fr.cnamts.ex.tasklet.GestionErrorTasklet]: Bean property 'repEntree' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'gestionErrorTasklet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repEntree' of bean class [fr.cnamts.ex.tasklet.GestionErrorTasklet]: Bean property 'repEntree' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	... 16 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'repEntree' of bean class [fr.cnamts.ex.tasklet.GestionErrorTasklet]: Bean property 'repEntree' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 24 more
+2016-02-10 10:57:59,794 ERROR {} (AbstractJob.java:326): Encountered fatal error executing job
+org.springframework.batch.core.JobExecutionException: Flow execution ended unexpectedly
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:141)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.batch.core.job.flow.FlowExecutionException: Next state not found in flow=monJob for state=monJob.validerFileEntreeStep with exit status=COMPLETED
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.nextState(SimpleFlow.java:219)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:167)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	... 7 more
+2016-02-11 05:04:49,248 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-11 05:04:49,264 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 11/02/2016 05:04:49 avec le code retour : 2
+2016-02-11 05:04:49,265 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	... 16 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 24 more
+2016-02-11 05:05:47,995 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-11 05:05:48,000 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 11/02/2016 05:05:47 avec le code retour : 2
+2016-02-11 05:05:48,001 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	... 16 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 24 more
+2016-02-11 07:05:19,087 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-11 07:05:19,117 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 11/02/2016 07:05:19 avec le code retour : 2
+2016-02-11 07:05:19,118 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	... 16 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 24 more
+2016-02-11 07:05:50,687 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-11 07:05:50,693 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 11/02/2016 07:05:50 avec le code retour : 2
+2016-02-11 07:05:50,694 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeStep': Cannot resolve reference to bean 'validerFileEntreeTakslet' while setting bean property 'tasklet'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:329)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:107)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'validerFileEntreeTakslet' defined in class path resource [fr/cnamts/ex/job/job.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveReference(BeanDefinitionValueResolver.java:323)
+	... 16 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'repSortie' of bean class [fr.cnamts.ex.tasklet.ValiderFileEntreeTakslet]: Bean property 'repSortie' is not writable or has an invalid setter method. Does the parameter type of the setter match the return type of the getter?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 24 more
+2016-02-11 07:21:46,715 INFO {} (FinitionJobListner.java:46): 02/11/2016 07:21:46
+2016-02-11 07:23:18,890 ERROR {} (AbstractJob.java:326): Encountered fatal error executing job
+org.springframework.batch.core.JobExecutionException: Flow execution ended unexpectedly
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:141)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.batch.core.job.flow.FlowExecutionException: Next state not found in flow=monJob for state=monJob.validerFileEntreeStep with exit status=COMPLETED
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.nextState(SimpleFlow.java:219)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:167)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	... 7 more
+2016-02-11 07:23:18,893 INFO {} (FinitionJobListner.java:31): 02/11/2016 07:23:18
+2016-02-11 07:23:18,893 ERROR {} (AbstractJob.java:345): Exception encountered in afterStep callback
+java.lang.NullPointerException
+	at fr.cnamts.ex.batch.listener.FinitionJobListner.afterJob(FinitionJobListner.java:34)
+	at org.springframework.batch.core.listener.CompositeJobExecutionListener.afterJob(CompositeJobExecutionListener.java:60)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:343)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-11 07:28:08,168 INFO {} (FinitionJobListner.java:46): 02/11/2016 07:28:08
+2016-02-11 07:29:39,790 ERROR {} (AbstractJob.java:326): Encountered fatal error executing job
+org.springframework.batch.core.JobExecutionException: Flow execution ended unexpectedly
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:141)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.batch.core.job.flow.FlowExecutionException: Next state not found in flow=monJob for state=monJob.validerFileEntreeStep with exit status=COMPLETED
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.nextState(SimpleFlow.java:219)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:167)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	... 7 more
+2016-02-11 07:29:55,007 INFO {} (FinitionJobListner.java:31): 02/11/2016 07:29:39
+2016-02-11 07:30:46,664 ERROR {} (AbstractJob.java:345): Exception encountered in afterStep callback
+java.lang.NullPointerException
+	at fr.cnamts.ex.batch.listener.FinitionJobListner.afterJob(FinitionJobListner.java:34)
+	at org.springframework.batch.core.listener.CompositeJobExecutionListener.afterJob(CompositeJobExecutionListener.java:60)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:343)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-11 07:31:02,955 INFO {} (FinitionJobListner.java:46): 02/11/2016 07:30:58
+2016-02-11 07:31:20,173 ERROR {} (AbstractJob.java:326): Encountered fatal error executing job
+org.springframework.batch.core.JobExecutionException: Flow execution ended unexpectedly
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:141)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.batch.core.job.flow.FlowExecutionException: Next state not found in flow=monJob for state=monJob.validerFileEntreeStep with exit status=COMPLETED
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.nextState(SimpleFlow.java:219)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:167)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	... 7 more
+2016-02-11 07:31:24,549 INFO {} (FinitionJobListner.java:31): 02/11/2016 07:31:20
+2016-02-11 07:33:50,076 ERROR {} (AbstractJob.java:345): Exception encountered in afterStep callback
+java.lang.ClassCastException: java.lang.String cannot be cast to java.io.File
+	at fr.cnamts.ex.batch.listener.FinitionJobListner.afterJob(FinitionJobListner.java:35)
+	at org.springframework.batch.core.listener.CompositeJobExecutionListener.afterJob(CompositeJobExecutionListener.java:60)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:343)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-11 07:34:09,954 INFO {} (FinitionJobListner.java:46): 02/11/2016 07:34:09
+2016-02-11 07:34:38,760 ERROR {} (AbstractJob.java:326): Encountered fatal error executing job
+org.springframework.batch.core.JobExecutionException: Flow execution ended unexpectedly
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:141)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.batch.core.job.flow.FlowExecutionException: Next state not found in flow=monJob for state=monJob.validerFileEntreeStep with exit status=COMPLETED
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.nextState(SimpleFlow.java:219)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:167)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	... 7 more
+2016-02-11 07:34:43,877 INFO {} (FinitionJobListner.java:31): 02/11/2016 07:34:38
+2016-02-11 09:34:17,001 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-11 09:34:17,025 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 11/02/2016 09:34:17 avec le code retour : 2
+2016-02-11 09:34:17,026 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Line 57 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'next'. One of '{"http://www.springframework.org/schema/batch":transaction-attributes, "http://www.springframework.org/schema/batch":no-rollback-exception-classes, "http://www.springframework.org/schema/batch":listeners, "http://www.springframework.org/schema/beans":bean, "http://www.springframework.org/schema/beans":ref}' is expected.
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 57 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'next'. One of '{"http://www.springframework.org/schema/batch":transaction-attributes, "http://www.springframework.org/schema/batch":no-rollback-exception-classes, "http://www.springframework.org/schema/batch":listeners, "http://www.springframework.org/schema/beans":bean, "http://www.springframework.org/schema/beans":ref}' is expected.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.4.a: Invalid content was found starting with element 'next'. One of '{"http://www.springframework.org/schema/batch":transaction-attributes, "http://www.springframework.org/schema/batch":no-rollback-exception-classes, "http://www.springframework.org/schema/batch":listeners, "http://www.springframework.org/schema/beans":bean, "http://www.springframework.org/schema/beans":ref}' is expected.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:410)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3165)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleStartElement(XMLSchemaValidator.java:1777)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.startElement(XMLSchemaValidator.java:685)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.scanStartElement(XMLNSDocumentScannerImpl.java:400)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2740)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:508)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:807)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:107)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:225)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:283)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 15 more
+2016-02-12 04:15:25,377 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-12 04:15:25,451 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 12/02/2016 04:15:25 avec le code retour : 2
+2016-02-12 04:15:25,451 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'personneItemReader' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneItemReader' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:607)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:142)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate(BeanDefinitionValueResolver.java:211)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:183)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 12 more
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:246)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:107)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:48)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:81)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:102)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:98)
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:82)
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:39)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:139)
+	... 18 more
+2016-02-12 04:18:15,709 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-12 04:18:15,715 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 12/02/2016 04:18:15 avec le code retour : 2
+2016-02-12 04:18:15,716 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'personneItemReader' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneItemReader' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:607)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanExpressionException: Expression parsing failed; nested exception is org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:142)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.evaluateBeanDefinitionString(AbstractBeanFactory.java:1300)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.evaluate(BeanDefinitionValueResolver.java:211)
+	at org.springframework.beans.factory.support.BeanDefinitionValueResolver.resolveValueIfNecessary(BeanDefinitionValueResolver.java:183)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	... 12 more
+Caused by: org.springframework.expression.spel.SpelEvaluationException: EL1008E:(pos 0): Field or property 'jobExecutionContext' cannot be found on object of type 'org.springframework.beans.factory.config.BeanExpressionContext'
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.readProperty(PropertyOrFieldReference.java:246)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:112)
+	at org.springframework.expression.spel.ast.PropertyOrFieldReference.getValueInternal(PropertyOrFieldReference.java:107)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueRef(CompoundExpression.java:48)
+	at org.springframework.expression.spel.ast.CompoundExpression.getValueInternal(CompoundExpression.java:81)
+	at org.springframework.expression.spel.ast.SpelNodeImpl.getTypedValue(SpelNodeImpl.java:102)
+	at org.springframework.expression.spel.standard.SpelExpression.getValue(SpelExpression.java:98)
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:82)
+	at org.springframework.expression.common.CompositeStringExpression.getValue(CompositeStringExpression.java:39)
+	at org.springframework.context.expression.StandardBeanExpressionResolver.evaluate(StandardBeanExpressionResolver.java:139)
+	... 18 more
+2016-02-12 04:19:59,102 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-12 04:19:59,127 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 12/02/2016 04:19:59 avec le code retour : 2
+2016-02-12 04:19:59,129 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'personneItemWriter' defined in class path resource [fr/cnamts/ex/job/writer.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'personneBOAdapter' of bean class [fr.cnamts.ex.batch.item.PersonneItemWriter]: Bean property 'personneBOAdapter' is not writable or has an invalid setter method. Did you mean 'personneAdapter'?
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneItemWriter' defined in class path resource [fr/cnamts/ex/job/writer.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'personneBOAdapter' of bean class [fr.cnamts.ex.batch.item.PersonneItemWriter]: Bean property 'personneBOAdapter' is not writable or has an invalid setter method. Did you mean 'personneAdapter'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:607)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'personneBOAdapter' of bean class [fr.cnamts.ex.batch.item.PersonneItemWriter]: Bean property 'personneBOAdapter' is not writable or has an invalid setter method. Did you mean 'personneAdapter'?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 14 more
+2016-02-12 04:24:31,358 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:23:05
+2016-02-12 04:24:46,578 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.personneItemReader' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'lineToSkip' of bean class [fr.cnamts.ex.batch.item.PersonneItemReader]: Bean property 'lineToSkip' is not writable or has an invalid setter method. Did you mean 'linesToSkip'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:333)
+	at org.springframework.batch.core.scope.StepScope.get(StepScope.java:158)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:329)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:33)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:184)
+	at $Proxy5.open(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.open(CompositeItemStream.java:96)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.open(TaskletStep.java:306)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:192)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'lineToSkip' of bean class [fr.cnamts.ex.batch.item.PersonneItemReader]: Bean property 'lineToSkip' is not writable or has an invalid setter method. Did you mean 'linesToSkip'?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 26 more
+2016-02-12 04:24:46,672 ERROR {} (AbstractStep.java:267): Exception while closing step execution resources
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.personneItemReader' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'lineToSkip' of bean class [fr.cnamts.ex.batch.item.PersonneItemReader]: Bean property 'lineToSkip' is not writable or has an invalid setter method. Did you mean 'linesToSkip'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:333)
+	at org.springframework.batch.core.scope.StepScope.get(StepScope.java:158)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:329)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:33)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:184)
+	at $Proxy5.close(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.close(CompositeItemStream.java:85)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.close(TaskletStep.java:301)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:264)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'lineToSkip' of bean class [fr.cnamts.ex.batch.item.PersonneItemReader]: Bean property 'lineToSkip' is not writable or has an invalid setter method. Did you mean 'linesToSkip'?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:907)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 26 more
+2016-02-12 04:24:54,957 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:24:53
+2016-02-12 04:26:24,376 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:26:24
+2016-02-12 04:26:46,783 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:26:46
+2016-02-12 04:28:15,305 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:28:15
+2016-02-12 04:28:28,138 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.ItemStreamException: Failed to initialize the reader
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.open(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.open(CompositeItemStream.java:96)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.open(TaskletStep.java:306)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:192)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: java.lang.IllegalStateException: Input resource must exist (reader is in 'strict' mode): URL [file:./resources/ex/entree/./resources/ex/entree]
+	at org.springframework.batch.item.file.FlatFileItemReader.doOpen(FlatFileItemReader.java:251)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:139)
+	... 28 more
+2016-02-12 04:28:53,305 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:28:49
+2016-02-12 04:30:17,173 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:30:17
+2016-02-12 04:30:34,507 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:30:34
+2016-02-12 04:31:04,180 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:31:04
+2016-02-12 04:33:02,152 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.ItemStreamException: Failed to initialize the reader
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.open(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.open(CompositeItemStream.java:96)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.open(TaskletStep.java:306)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:192)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: java.lang.IllegalStateException: Input resource must exist (reader is in 'strict' mode): URL [file:./resources/ex/entree/./resources/ex/entree]
+	at org.springframework.batch.item.file.FlatFileItemReader.doOpen(FlatFileItemReader.java:251)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:139)
+	... 28 more
+2016-02-12 04:36:10,785 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2016-02-12 04:36:10,785 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 12/02/2016 04:36:10 avec le code retour : 2
+2016-02-12 04:36:10,785 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'jobRepository': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12519, TNS:no appropriate service handler found
+The Connection descriptor used by the client was:
+localhost:1521:xe
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobRepository': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12519, TNS:no appropriate service handler found
+The Connection descriptor used by the client was:
+localhost:1521:xe
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12519, TNS:no appropriate service handler found
+The Connection descriptor used by the client was:
+localhost:1521:xe
+
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:293)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:320)
+	at org.springframework.batch.support.DatabaseType.fromMetaData(DatabaseType.java:93)
+	at org.springframework.batch.core.repository.support.JobRepositoryFactoryBean.afterPropertiesSet(JobRepositoryFactoryBean.java:162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1483)
+	... 13 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12519, TNS:no appropriate service handler found
+The Connection descriptor used by the client was:
+localhost:1521:xe
+
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:280)
+	... 18 more
+Caused by: java.sql.SQLException: Listener refused the connection with the following error:
+ORA-12519, TNS:no appropriate service handler found
+The Connection descriptor used by the client was:
+localhost:1521:xe
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:261)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:387)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:420)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:278)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:182)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:701)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:635)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:486)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:144)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:116)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:103)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:127)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 19 more
+2016-02-12 04:36:20,980 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:36:20
+2016-02-12 04:36:21,074 ERROR {} (AbstractJob.java:345): Exception encountered in afterStep callback
+java.lang.ClassCastException: java.io.File cannot be cast to java.lang.String
+	at fr.cnamts.ex.batch.listener.FinitionJobListner.afterJob(FinitionJobListner.java:35)
+	at org.springframework.batch.core.listener.CompositeJobExecutionListener.afterJob(CompositeJobExecutionListener.java:60)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:343)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-12 04:36:26,883 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:36:26
+2016-02-12 04:37:02,102 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 2 in resource=[URL [file:./resources/ex/entree/tpSpringBatch.csv]], input=[nom1;prenom1;1]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.read(Unknown Source)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:155)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:114)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:253)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.personnelineTokenizer' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'name' of bean class [fr.cnamts.ex.batch.item.tokenizer.PersonneLineTokenizer]: Bean property 'name' is not writable or has an invalid setter method. Did you mean 'names'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:333)
+	at org.springframework.batch.core.scope.StepScope.get(StepScope.java:158)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:329)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:33)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:184)
+	at $Proxy6.tokenize(Unknown Source)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 43 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'name' of bean class [fr.cnamts.ex.batch.item.tokenizer.PersonneLineTokenizer]: Bean property 'name' is not writable or has an invalid setter method. Did you mean 'names'?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 55 more
+2016-02-12 04:37:12,639 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:37:11
+2016-02-12 04:39:51,237 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:39:51
+2016-02-12 04:40:06,447 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:40:06
+2016-02-12 04:40:31,214 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:40:31
+2016-02-12 04:40:52,146 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 2 in resource=[URL [file:./resources/ex/entree/tpSpringBatch.csv]], input=[nom1;prenom1;1]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.read(Unknown Source)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:155)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:114)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:253)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.personnelineTokenizer' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'name' of bean class [fr.cnamts.ex.batch.item.tokenizer.PersonneLineTokenizer]: Bean property 'name' is not writable or has an invalid setter method. Did you mean 'names'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:333)
+	at org.springframework.batch.core.scope.StepScope.get(StepScope.java:158)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:329)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:33)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:184)
+	at $Proxy6.tokenize(Unknown Source)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 43 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'name' of bean class [fr.cnamts.ex.batch.item.tokenizer.PersonneLineTokenizer]: Bean property 'name' is not writable or has an invalid setter method. Did you mean 'names'?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 55 more
+2016-02-12 04:40:55,255 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:40:55
+2016-02-12 04:41:28,826 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:41:28
+2016-02-12 04:43:51,122 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.file.FlatFileParseException: Parsing error at line: 2 in resource=[URL [file:./resources/ex/entree/tpSpringBatch.csv]], input=[nom1;prenom1;1]
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:183)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.read(AbstractItemCountingItemStreamItemReader.java:83)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.read(Unknown Source)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.doRead(SimpleChunkProvider.java:91)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.read(SimpleChunkProvider.java:155)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider$1.doInIteration(SimpleChunkProvider.java:114)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.item.SimpleChunkProvider.provide(SimpleChunkProvider.java:108)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:69)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:253)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'scopedTarget.personnelineTokenizer' defined in class path resource [fr/cnamts/ex/job/reader.xml]: Error setting property values; nested exception is org.springframework.beans.NotWritablePropertyException: Invalid property 'name' of bean class [fr.cnamts.ex.batch.item.tokenizer.PersonneLineTokenizer]: Bean property 'name' is not writable or has an invalid setter method. Did you mean 'names'?
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1427)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1132)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:522)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$2.getObject(AbstractBeanFactory.java:333)
+	at org.springframework.batch.core.scope.StepScope.get(StepScope.java:158)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:329)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.aop.target.SimpleBeanTargetSource.getTarget(SimpleBeanTargetSource.java:33)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:184)
+	at $Proxy6.tokenize(Unknown Source)
+	at org.springframework.batch.item.file.mapping.DefaultLineMapper.mapLine(DefaultLineMapper.java:43)
+	at org.springframework.batch.item.file.FlatFileItemReader.doRead(FlatFileItemReader.java:180)
+	... 43 more
+Caused by: org.springframework.beans.NotWritablePropertyException: Invalid property 'name' of bean class [fr.cnamts.ex.batch.item.tokenizer.PersonneLineTokenizer]: Bean property 'name' is not writable or has an invalid setter method. Did you mean 'names'?
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:1044)
+	at org.springframework.beans.BeanWrapperImpl.setPropertyValue(BeanWrapperImpl.java:904)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:75)
+	at org.springframework.beans.AbstractPropertyAccessor.setPropertyValues(AbstractPropertyAccessor.java:57)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyPropertyValues(AbstractAutowireCapableBeanFactory.java:1424)
+	... 55 more
+2016-02-12 04:48:08,353 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:48:07
+2016-02-12 04:48:30,971 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:48:30
+2016-02-12 04:49:56,573 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+java.lang.ArrayIndexOutOfBoundsException: 3
+	at fr.cnamts.ex.batch.adapter.PersonneAdapter.fromPersonneToPersonneDetailleBO(PersonneAdapter.java:24)
+	at fr.cnamts.ex.batch.item.PersonneItemWriter.write(PersonneItemWriter.java:54)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.writeItems(SimpleChunkProcessor.java:175)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.doWrite(SimpleChunkProcessor.java:151)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.write(SimpleChunkProcessor.java:274)
+	at org.springframework.batch.core.step.item.SimpleChunkProcessor.process(SimpleChunkProcessor.java:199)
+	at org.springframework.batch.core.step.item.ChunkOrientedTasklet.execute(ChunkOrientedTasklet.java:75)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$ChunkTransactionCallback.doInTransaction(TaskletStep.java:395)
+	at org.springframework.transaction.support.TransactionTemplate.execute(TransactionTemplate.java:130)
+	at org.springframework.batch.core.step.tasklet.TaskletStep$2.doInChunkContext(TaskletStep.java:267)
+	at org.springframework.batch.core.scope.context.StepContextRepeatCallback.doInIteration(StepContextRepeatCallback.java:77)
+	at org.springframework.batch.repeat.support.RepeatTemplate.getNextResult(RepeatTemplate.java:368)
+	at org.springframework.batch.repeat.support.RepeatTemplate.executeInternal(RepeatTemplate.java:215)
+	at org.springframework.batch.repeat.support.RepeatTemplate.iterate(RepeatTemplate.java:144)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.doExecute(TaskletStep.java:253)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:195)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+2016-02-12 04:50:02,938 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:50:01
+2016-02-12 04:51:04,692 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:51:04
+2016-02-12 04:52:59,005 INFO {} (FinitionJobListner.java:46): 02/12/2016 04:52:58
+2016-02-12 04:53:58,991 ERROR {} (AbstractJob.java:326): Encountered fatal error executing job
+org.springframework.batch.core.JobExecutionException: Flow execution ended unexpectedly
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:141)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.batch.core.job.flow.FlowExecutionException: Next state not found in flow=monJob for state=monJob.personneStep with exit status=COMPLETED
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.nextState(SimpleFlow.java:219)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:167)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	... 7 more
+2016-02-12 04:53:59,239 INFO {} (FinitionJobListner.java:31): 02/12/2016 04:53:58
+2016-02-12 05:00:26,246 INFO {} (FinitionJobListner.java:46): 02/12/2016 05:00:26
+2016-02-12 05:01:05,797 INFO {} (FinitionJobListner.java:31): 02/12/2016 05:01:05
+2016-02-12 05:02:52,876 INFO {} (FinitionJobListner.java:46): 02/12/2016 05:02:52
+2016-02-12 05:03:36,008 INFO {} (FinitionJobListner.java:31): 02/12/2016 05:03:36
+2016-02-12 09:35:43,998 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2016-02-12 09:35:44,028 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 12/02/2016 09:35:44 avec le code retour : 2
+2016-02-12 09:35:44,029 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Line 19 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: Content is not allowed in prolog.
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 19 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.xml.sax.SAXParseException: Content is not allowed in prolog.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.fatalError(ErrorHandlerWrapper.java:174)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:388)
+	at com.sun.org.apache.xerces.internal.impl.XMLScanner.reportFatalError(XMLScanner.java:1411)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl$PrologDriver.next(XMLDocumentScannerImpl.java:1024)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:508)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:807)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:107)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:225)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:283)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 15 more
+2016-02-12 09:38:58,491 INFO {} (FinitionJobListner.java:46): 02/12/2016 09:38:58
+2016-02-12 09:39:12,210 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.ItemStreamException: Failed to initialize the reader
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy6.open(Unknown Source)
+	at fr.cnamts.ex.batch.item.PersonneJdbcReader.open(PersonneJdbcReader.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.open(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.open(CompositeItemStream.java:96)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.open(TaskletStep.java:306)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:192)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: Executing query; bad SQL grammar [SELECT a.peronne_id,a.nom,a.prenom,a.age        FROM CDPS_PERSONNE a       ORDER BY a.peronne_id ASC]; nested exception is java.sql.SQLException: ORA-00904: "A"."PERONNE_ID" : identificateur non valide
+
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:233)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.batch.item.database.JdbcCursorItemReader.openCursor(JdbcCursorItemReader.java:132)
+	at org.springframework.batch.item.database.AbstractCursorItemReader.doOpen(AbstractCursorItemReader.java:403)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:139)
+	... 41 more
+Caused by: java.sql.SQLException: ORA-00904: "A"."PERONNE_ID" : identificateur non valide
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:743)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:799)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1037)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:839)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1132)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3316)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3361)
+	at org.springframework.batch.item.database.JdbcCursorItemReader.openCursor(JdbcCursorItemReader.java:127)
+	... 43 more
+2016-02-12 09:39:15,096 INFO {} (FinitionJobListner.java:31): 02/12/2016 09:39:12
+2016-02-12 09:40:33,796 INFO {} (FinitionJobListner.java:46): 02/12/2016 09:40:33
+2016-02-12 09:40:47,071 ERROR {} (AbstractStep.java:222): Encountered an error executing the step
+org.springframework.batch.item.ItemStreamException: Failed to initialize the reader
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:142)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy6.open(Unknown Source)
+	at fr.cnamts.ex.batch.item.PersonneJdbcReader.open(PersonneJdbcReader.java:26)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:39)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:25)
+	at java.lang.reflect.Method.invoke(Method.java:597)
+	at org.springframework.aop.support.AopUtils.invokeJoinpointUsingReflection(AopUtils.java:317)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.invokeJoinpoint(ReflectiveMethodInvocation.java:183)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:150)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.doProceed(DelegatingIntroductionInterceptor.java:131)
+	at org.springframework.aop.support.DelegatingIntroductionInterceptor.invoke(DelegatingIntroductionInterceptor.java:119)
+	at org.springframework.aop.framework.ReflectiveMethodInvocation.proceed(ReflectiveMethodInvocation.java:172)
+	at org.springframework.aop.framework.JdkDynamicAopProxy.invoke(JdkDynamicAopProxy.java:204)
+	at $Proxy5.open(Unknown Source)
+	at org.springframework.batch.item.support.CompositeItemStream.open(CompositeItemStream.java:96)
+	at org.springframework.batch.core.step.tasklet.TaskletStep.open(TaskletStep.java:306)
+	at org.springframework.batch.core.step.AbstractStep.execute(AbstractStep.java:192)
+	at org.springframework.batch.core.job.SimpleStepHandler.handleStep(SimpleStepHandler.java:137)
+	at org.springframework.batch.core.job.flow.JobFlowExecutor.executeStep(JobFlowExecutor.java:64)
+	at org.springframework.batch.core.job.flow.support.state.StepState.handle(StepState.java:60)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.resume(SimpleFlow.java:152)
+	at org.springframework.batch.core.job.flow.support.SimpleFlow.start(SimpleFlow.java:131)
+	at org.springframework.batch.core.job.flow.FlowJob.doExecute(FlowJob.java:135)
+	at org.springframework.batch.core.job.AbstractJob.execute(AbstractJob.java:301)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher$1.run(SimpleJobLauncher.java:134)
+	at org.springframework.core.task.SyncTaskExecutor.execute(SyncTaskExecutor.java:48)
+	at org.springframework.batch.core.launch.support.SimpleJobLauncher.run(SimpleJobLauncher.java:127)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.executerJob(CommandLineJobrunner.java:192)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:440)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.jdbc.BadSqlGrammarException: Executing query; bad SQL grammar [SELECT a.personne_id,a.nom,a.prenom,a.age        FROM CDPS_PERSONNE a       ORDER BY a.peronne_id ASC]; nested exception is java.sql.SQLException: ORA-00904: "A"."PERONNE_ID" : identificateur non valide
+
+	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:233)
+	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
+	at org.springframework.batch.item.database.JdbcCursorItemReader.openCursor(JdbcCursorItemReader.java:132)
+	at org.springframework.batch.item.database.AbstractCursorItemReader.doOpen(AbstractCursorItemReader.java:403)
+	at org.springframework.batch.item.support.AbstractItemCountingItemStreamItemReader.open(AbstractItemCountingItemStreamItemReader.java:139)
+	... 41 more
+Caused by: java.sql.SQLException: ORA-00904: "A"."PERONNE_ID" : identificateur non valide
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:288)
+	at oracle.jdbc.driver.T4C8Oall.receive(T4C8Oall.java:743)
+	at oracle.jdbc.driver.T4CPreparedStatement.doOall8(T4CPreparedStatement.java:216)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeForDescribe(T4CPreparedStatement.java:799)
+	at oracle.jdbc.driver.OracleStatement.executeMaybeDescribe(OracleStatement.java:1037)
+	at oracle.jdbc.driver.T4CPreparedStatement.executeMaybeDescribe(T4CPreparedStatement.java:839)
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1132)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeInternal(OraclePreparedStatement.java:3316)
+	at oracle.jdbc.driver.OraclePreparedStatement.executeQuery(OraclePreparedStatement.java:3361)
+	at org.springframework.batch.item.database.JdbcCursorItemReader.openCursor(JdbcCursorItemReader.java:127)
+	... 43 more
+2016-02-12 09:40:48,749 INFO {} (FinitionJobListner.java:31): 02/12/2016 09:40:47
+2016-02-12 09:42:25,179 INFO {} (FinitionJobListner.java:46): 02/12/2016 09:42:25
+2016-02-12 09:43:17,566 INFO {} (FinitionJobListner.java:31): 02/12/2016 09:43:17
+2019-04-22 13:41:24,008 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2019-04-22 13:41:24,030 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 22/04/2019 13:41:24 avec le code retour : 2
+2019-04-22 13:41:24,031 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'jobRepository': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobRepository': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:293)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:320)
+	at org.springframework.batch.support.DatabaseType.fromMetaData(DatabaseType.java:93)
+	at org.springframework.batch.core.repository.support.JobRepositoryFactoryBean.afterPropertiesSet(JobRepositoryFactoryBean.java:162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1483)
+	... 13 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:280)
+	... 18 more
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:790)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:420)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:278)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:182)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:701)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:635)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:486)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:144)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:116)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:103)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:127)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 19 more
+2019-04-22 13:44:40,272 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2019-04-22 13:44:40,277 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 22/04/2019 13:44:40 avec le code retour : 2
+2019-04-22 13:44:40,278 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'jobRepository': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'jobRepository': Invocation of init method failed; nested exception is org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1486)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.jdbc.support.MetaDataAccessException: Could not get Connection for extracting meta data; nested exception is org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:293)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:320)
+	at org.springframework.batch.support.DatabaseType.fromMetaData(DatabaseType.java:93)
+	at org.springframework.batch.core.repository.support.JobRepositoryFactoryBean.afterPropertiesSet(JobRepositoryFactoryBean.java:162)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1545)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1483)
+	... 13 more
+Caused by: org.springframework.jdbc.CannotGetJdbcConnectionException: Could not get JDBC Connection; nested exception is java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:80)
+	at org.springframework.jdbc.support.JdbcUtils.extractDatabaseMetaData(JdbcUtils.java:280)
+	... 18 more
+Caused by: java.sql.SQLException: ORA-01017: invalid username/password; logon denied
+
+	at oracle.jdbc.driver.DatabaseError.throwSqlException(DatabaseError.java:112)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:331)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:283)
+	at oracle.jdbc.driver.T4CTTIoer.processError(T4CTTIoer.java:278)
+	at oracle.jdbc.driver.T4CTTIoauthenticate.receiveOauth(T4CTTIoauthenticate.java:790)
+	at oracle.jdbc.driver.T4CConnection.logon(T4CConnection.java:362)
+	at oracle.jdbc.driver.PhysicalConnection.<init>(PhysicalConnection.java:420)
+	at oracle.jdbc.driver.T4CConnection.<init>(T4CConnection.java:165)
+	at oracle.jdbc.driver.T4CDriverExtension.getConnection(T4CDriverExtension.java:35)
+	at oracle.jdbc.driver.OracleDriver.connect(OracleDriver.java:801)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connectUsingDriver(PooledConnection.java:278)
+	at org.apache.tomcat.jdbc.pool.PooledConnection.connect(PooledConnection.java:182)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.createConnection(ConnectionPool.java:701)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.borrowConnection(ConnectionPool.java:635)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.init(ConnectionPool.java:486)
+	at org.apache.tomcat.jdbc.pool.ConnectionPool.<init>(ConnectionPool.java:144)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.pCreatePool(DataSourceProxy.java:116)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.createPool(DataSourceProxy.java:103)
+	at org.apache.tomcat.jdbc.pool.DataSourceProxy.getConnection(DataSourceProxy.java:127)
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:111)
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:77)
+	... 19 more
+2019-04-22 13:45:11,994 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2019-04-22 13:45:11,997 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 22/04/2019 13:45:11 avec le code retour : 2
+2019-04-22 13:45:11,998 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'personneJdbcReader' defined in BeanDefinition defined in class path resource [fr/cnamts/ex2/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [fr.cnamts.ex.batch.item.PersonneJdbcReader] for bean with name 'scopedTarget.personneJdbcReader' defined in class path resource [fr/cnamts/ex2/job/reader.xml]; nested exception is java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneJdbcReader' defined in BeanDefinition defined in class path resource [fr/cnamts/ex2/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [fr.cnamts.ex.batch.item.PersonneJdbcReader] for bean with name 'scopedTarget.personneJdbcReader' defined in class path resource [fr/cnamts/ex2/job/reader.xml]; nested exception is java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [fr.cnamts.ex.batch.item.PersonneJdbcReader] for bean with name 'scopedTarget.personneJdbcReader' defined in class path resource [fr/cnamts/ex2/job/reader.xml]; nested exception is java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1263)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getType(AbstractBeanFactory.java:573)
+	at org.springframework.aop.scope.ScopedProxyFactoryBean.setBeanFactory(ScopedProxyFactoryBean.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:258)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:415)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1255)
+	... 18 more
+2019-04-22 13:48:23,500 INFO {} (CommandLineJobrunner.java:461): L'environnement d'exécution n'est pas opérationnel, problème au niveau de : Disponibilité du référentiel CDPS_O.
+2019-04-22 13:48:23,503 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 22/04/2019 13:48:23 avec le code retour : 2
+2019-04-22 13:48:23,503 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Error creating bean with name 'personneJdbcReader' defined in BeanDefinition defined in class path resource [fr/cnamts/ex2/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [fr.cnamts.ex.batch.item.PersonneJdbcReader] for bean with name 'scopedTarget.personneJdbcReader' defined in class path resource [fr/cnamts/ex2/job/reader.xml]; nested exception is java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'personneJdbcReader' defined in BeanDefinition defined in class path resource [fr/cnamts/ex2/job/reader.xml]: Initialization of bean failed; nested exception is org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [fr.cnamts.ex.batch.item.PersonneJdbcReader] for bean with name 'scopedTarget.personneJdbcReader' defined in class path resource [fr/cnamts/ex2/job/reader.xml]; nested exception is java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:532)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:461)
+	at org.springframework.beans.factory.support.AbstractBeanFactory$1.getObject(AbstractBeanFactory.java:295)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:223)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:292)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:194)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:589)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:932)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:479)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.springframework.beans.factory.CannotLoadBeanClassException: Cannot find class [fr.cnamts.ex.batch.item.PersonneJdbcReader] for bean with name 'scopedTarget.personneJdbcReader' defined in class path resource [fr/cnamts/ex2/job/reader.xml]; nested exception is java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1263)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.predictBeanType(AbstractAutowireCapableBeanFactory.java:581)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getType(AbstractBeanFactory.java:573)
+	at org.springframework.aop.scope.ScopedProxyFactoryBean.setBeanFactory(ScopedProxyFactoryBean.java:92)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeAwareMethods(AbstractAutowireCapableBeanFactory.java:1506)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1474)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:524)
+	... 12 more
+Caused by: java.lang.ClassNotFoundException: fr.cnamts.ex.batch.item.PersonneJdbcReader
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:202)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:190)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:306)
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:301)
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:247)
+	at org.springframework.util.ClassUtils.forName(ClassUtils.java:258)
+	at org.springframework.beans.factory.support.AbstractBeanDefinition.resolveBeanClass(AbstractBeanDefinition.java:415)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doResolveBeanClass(AbstractBeanFactory.java:1284)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveBeanClass(AbstractBeanFactory.java:1255)
+	... 18 more
+2019-04-22 13:50:24,828 INFO {} (CommandLineJobrunner.java:464): L'environnement d'exécution n'est pas opérationnel.
+2019-04-22 13:50:24,835 INFO {} (CommandLineJobrunner.java:467): Date de fin de traitement : 22/04/2019 13:50:24 avec le code retour : 2
+2019-04-22 13:50:24,835 ERROR {} (CommandLineJobrunner.java:474): Job Terminated in error: Line 44 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+org.springframework.beans.factory.xml.XmlBeanDefinitionStoreException: Line 44 in XML document from class path resource [fr/cnamts/ex/job/job.xml] is invalid; nested exception is org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:396)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:334)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:302)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:174)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:209)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:180)
+	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:243)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:127)
+	at org.springframework.context.support.AbstractXmlApplicationContext.loadBeanDefinitions(AbstractXmlApplicationContext.java:93)
+	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:131)
+	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:537)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:451)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:139)
+	at org.springframework.context.support.ClassPathXmlApplicationContext.<init>(ClassPathXmlApplicationContext.java:83)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.start(CommandLineJobrunner.java:392)
+	at fr.cnamts.ex.batch.CommandLineJobrunner.main(CommandLineJobrunner.java:141)
+Caused by: org.xml.sax.SAXParseException: cvc-complex-type.2.3: Element 'beans' cannot have character [children], because the type's content type is element-only.
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.createSAXParseException(ErrorHandlerWrapper.java:195)
+	at com.sun.org.apache.xerces.internal.util.ErrorHandlerWrapper.error(ErrorHandlerWrapper.java:131)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:384)
+	at com.sun.org.apache.xerces.internal.impl.XMLErrorReporter.reportError(XMLErrorReporter.java:318)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator$XSIErrorReporter.reportError(XMLSchemaValidator.java:423)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.reportSchemaError(XMLSchemaValidator.java:3188)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidComplexType(XMLSchemaValidator.java:3151)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.elementLocallyValidType(XMLSchemaValidator.java:3111)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.processElementContent(XMLSchemaValidator.java:3013)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.handleEndElement(XMLSchemaValidator.java:2156)
+	at com.sun.org.apache.xerces.internal.impl.xs.XMLSchemaValidator.endElement(XMLSchemaValidator.java:824)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanEndElement(XMLDocumentFragmentScannerImpl.java:1782)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl$FragmentContentDriver.next(XMLDocumentFragmentScannerImpl.java:2939)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentScannerImpl.next(XMLDocumentScannerImpl.java:647)
+	at com.sun.org.apache.xerces.internal.impl.XMLNSDocumentScannerImpl.next(XMLNSDocumentScannerImpl.java:140)
+	at com.sun.org.apache.xerces.internal.impl.XMLDocumentFragmentScannerImpl.scanDocument(XMLDocumentFragmentScannerImpl.java:511)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:808)
+	at com.sun.org.apache.xerces.internal.parsers.XML11Configuration.parse(XML11Configuration.java:737)
+	at com.sun.org.apache.xerces.internal.parsers.XMLParser.parse(XMLParser.java:119)
+	at com.sun.org.apache.xerces.internal.parsers.DOMParser.parse(DOMParser.java:232)
+	at com.sun.org.apache.xerces.internal.jaxp.DocumentBuilderImpl.parse(DocumentBuilderImpl.java:284)
+	at org.springframework.beans.factory.xml.DefaultDocumentLoader.loadDocument(DefaultDocumentLoader.java:75)
+	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.doLoadBeanDefinitions(XmlBeanDefinitionReader.java:388)
+	... 15 more

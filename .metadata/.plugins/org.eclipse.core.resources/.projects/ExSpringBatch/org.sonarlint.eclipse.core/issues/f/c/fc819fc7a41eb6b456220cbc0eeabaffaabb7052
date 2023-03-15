@@ -1,0 +1,10 @@
+
+v
+java:S1128">Remove this unused import 'fr.cnamts.ex.batch.bo.EmployeeDto'.(öƒÚÎúÿÿÿÿ8Ã‘ıùí0HàRMINORZ
+CODE_SMELL
+‹
+java:S1488,"`Immediately return this expression instead of assigning it to the temporary variable "resultat".(ğ¥ÂPHáRMINORZ
+CODE_SMELL
+[
+java:S2065"0Remove the "transient" modifier from this field.(²ƒWHâRMINORZ
+CODE_SMELL
