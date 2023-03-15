@@ -1,15 +1,0 @@
-
-€
-java:S1128"MRemove this unused import 'fr.cnamts.ex.batch.tasklet.ValiderExistDbTasklet'.(ÁåÛÙ8Ïì¹úí0H–RMINORZ
-CODE_SMELL
-l
-java:S1854":Remove this useless assignment to local variable "source".(¶şƒL8Ëäı§î0HæRMAJORZ
-CODE_SMELL
-]
-java:S1481"+Remove this unused "source" local variable.(¶şƒL8Ëäı§î0HçRMINORZ
-CODE_SMELL
-n	java:S125"<This block of commented-out lines of code should be removed.(ğÂĞœ8Ëäı§î0HèRMAJORZ
-CODE_SMELL
-]
-java:S1068"*Remove this unused "LOGGER" private field.(çØõ¶8Ëäı§î0HğRMAJORZ
-CODE_SMELL

@@ -1,5 +1,0 @@
-package fr.cnamts.ex.batch.mapping;
-
-public class EmployeeRowMapping {
-
-}

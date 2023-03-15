@@ -1,5 +1,0 @@
-package fr.cnamts.ex.batch.item.writer;
-
-public class ImportEmployeeWriter {
-
-}
